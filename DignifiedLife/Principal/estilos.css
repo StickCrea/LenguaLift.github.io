@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'PT Sans', sans-serif;
+
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*Sldier ""*/
+
+.slider {
+    display: flex;
+    width: 600px;
+    height: 430px;
+    align-items: center;
+   
+    
+  
+    
+}
+.slider img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+.slider img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+
+}
+
+
+/*--------------------------------------*/
+
+
+
+/*Estilos del boton hacia arriba*/
+
+#subir__arriba{
+    width: 30px;
+    height: 30px;
+    background: rgba(172, 159, 159, 0.761);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: fixed;
+    align-self: auto;
+    bottom: 2%;
+    cursor: pointer;
+    display: none;
+    right: 5px;
+    
+    box-shadow: 0 3px 3px 0 black ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*---------------------------------*/
+
+
+.buttons-network {
+    position: absolute;
+    top: 40%;
+    left: 10px;
+}
+
+.buttons-network__button {
+
+    width: 55px;
+    height: 55px;
+    display: block;
+    box-shadow: 0 3px 6px rgb(3, 1, 1);
+    border-radius: 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #111111;
+
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.buttons-network__button p {
+    display: none;
+}
+
+.buttons-network__button:hover > p {
+    display: block;
+}
+
+.buttons-network__button:hover {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.buttons-network__button:nth-child(1):hover {
+    color: #027ffc;  
+}
+.buttons-network__button:nth-child(2):hover {
+    color: #f80858;  
+}
+.buttons-network__button:nth-child(3):hover {
+    color: #ff0000;  
+}
+.buttons-network__button:nth-child(4):hover {
+    color: #1D9BF0;  
+}
+.buttons-network__button:nth-child(5):hover {
+    color: #01f55a;  
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url(Img/hol.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.nav{
+    position: fixed ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+}
+.nav.active{
+    background: rgb(255, 255, 255);
+    padding: 15px;
+}
+.nav.active .logo,
+.nav.active a,
+.nav.active .menu-btn i{
+    color: #000;
+}
+.nav.active a:hover{
+    background: #fdfdfd;
+    color: #000000;
+}
+.logo{
+    font-size: 25px;
+    color: #000000;
+    font-weight: 100;
+} 
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+.menu li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background: #fffffffd;
+    color: #000;
+    border-radius: 15px;
+}
+
+.menu-btn{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px){
+    .menu-btn{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 353px;
+        height: 100vh;
+        background: #15cdf7;
+        display:  flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        transform: translatex(-100%);
+        opacity: 100%;
+        
+
+    }
+    .menu li{
+        margin: 15px 0 ;
+    }
+
+    .menu.active{
+        transform: translatex(0);
+    }
+}
+
+.scrol{
+    height: 100px;
+}
+/*Clic Menu*/
+
+nav a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    display: block;
+    padding: 0 2.5em;
+    
+    
+}
+nav a:hover{
+color: rgb(0, 0, 0);
+transition: .2s;
+
+
+
+}
+
+
+nav li ul{
+    display: none;
+     
+}
+nav li:hover ul {
+    display: block;
+
+}
+
+/* pie de pagina footer2*/
+footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px; /* Espaciado interior */
+    clear: both; /* Limpiar floats */
+    
+}
+  
+
+/*Nuestras Redes Sociales*/
+.Redes .fb:hover{
+  color: blue;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .ig:hover{
+  color: rgba(235, 13, 224, 0.699);
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .tw:hover{
+  color: #1D9DF0;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .yt:hover{
+  color: rgba(255, 0, 0, 0.699);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.Redes .what:hover{
+  color: rgba(37, 172, 66, 0.979);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+
+
+
+.Copyrigth {
+    text-align: center;
+    font-size: 14px;
+    color: #e9e7e7;
+    opacity: 45%;
+    margin: 15px;
+
+}
+.Redes a{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px;
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+
+}
+
+
+.Redes a:hover {
+  
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 black ;
+ 
+  filter: none;
+
+}
+
+/*Fondos de redes*/
+.Redes .fb{
+    color: rgb(0, 0, 0);
+   
+  }
+  .Redes .ig{
+    color: rgba(0, 0, 0, 0.699);
+    
+  }
+  .Redes .tw{
+    color: #000000;
+
+  }
+  .Redes .yt{
+    color: rgba(0, 0, 0, 0.699);
+    
+    
+  }
+  
+  .Redes .what{
+    color: rgba(0, 0, 0, 0.979);
+    
+  }

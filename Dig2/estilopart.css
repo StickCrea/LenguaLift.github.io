@@ -1,0 +1,198 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: 5px;
+  }
+  
+  header {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interior */
+    text-align:left; /* Alineación del texto */
+    
+  }
+  
+ 
+  
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+  
+  section {
+    margin-bottom: 70px;
+  }
+  
+  footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px; /* Espaciado interior */
+    clear: both; /* Limpiar floats */
+    
+  }
+  
+  /* Opcionalmente, puedes añadir un margen superior para separar el pie de página del contenido */
+  main {
+    margin-bottom: 60px;
+  }
+  
+main{
+  margin-top: 150px;
+  text-align:  center;
+ 
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  box-shadow: 5px 3px 10px rgb(3, 1, 1);
+
+}
+/*Nuestras Redes Sociales*/
+.Redes .fb:hover{
+  color: blue;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .ig:hover{
+  color: rgba(235, 13, 224, 0.699);
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .tw:hover{
+  color: #1D9DF0;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .yt:hover{
+  color: rgba(255, 0, 0, 0.699);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.Redes .what:hover{
+  color: rgba(37, 172, 66, 0.979);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+
+
+
+.Copyrigth {
+    text-align: center;
+    font-size: 14px;
+    color: #e9e7e7;
+    opacity: 45%;
+
+}
+.Redes a{
+  text-decoration: none;
+  font-size: 30px;
+  padding: 5px;
+  color: #000000;
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+
+}
+
+
+.Redes a:hover {
+  
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 black ;
+ 
+  filter: none;
+
+}
+
+
+
+
+
+
+
+/* Titulo*/
+
+
+body {
+    background-image: url('img/abue1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.text{
+ 
+    left:54px;
+    
+   
+        
+    font-family:'Montserrat';
+    font-style:normal;
+    font-weight:700;
+    font-size:36px;
+    line-height:44px;
+        
+    color: #000000;
+        
+}
+
+.boton {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .boton:hover {
+    background-color: #58795a;
+  }
+  
+  section h2{
+    padding: 3px solid;
+   
+  }
+  article img{
+    width: 80px;
+    margin: 10px;
+  }
+
+article .Servicio2{
+  width: 180px;
+  
+  
+
+}
+.Servicio_1 {
+width: 120px;
+margin: 10px;
+}
+.boton:hover{
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 black ;
+  color: #000000;
+  background: #ffffff;
+}
+section p {
+  font-size: 18px;
+ 
+  
+  
+  
+
+}
+/* Slider imagenes*/

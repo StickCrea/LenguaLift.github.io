@@ -1,0 +1,318 @@
+/* Aplicar estilos básicos a todos los elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(imgssoport/Fondo3.jpg);
+    background-size: cover;
+}
+
+
+/* Estilos para las tarjetas */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 100px;
+}
+
+.card{
+    width: 300px;
+    margin: 25px;
+    padding: 40px 20px;
+    background: linear-gradient(-45deg, #1201ff, #9a4eff);
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.title .fa-brands{
+    color: white;
+    font-size: 60px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.title h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/* Estilos para el botón */
+.btn {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 20px;
+    box-shadow:  0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease-out;
+    border-radius: 20px;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card:nth-child(2){
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+
+.card:nth-child(2):hover{
+    transform: scale(1.08);
+}
+
+.card:nth-child(3){
+    background: linear-gradient(-45deg, #31f300, #ffd000);
+}
+
+/* Estilos para la navegación */
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+    font-size: 20px;
+}
+
+.nav.active{
+    background: rgba(255, 255, 255, 0.848);
+    padding: 15px;
+}
+
+.nav.active .logo,
+.nav.active a,
+.nav.active .menu-btn i{
+    color: #000;
+}
+
+.nav.active a:hover{
+    background: #fdfdfd;
+    color: #000000;
+}
+
+.menu{
+    display: flex;
+    
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+
+.menu li a{
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.menu li a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+.menu-btn{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px){
+    .menu-btn{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 353px;
+        height: 100vh;
+        background: #4ec3dd;
+        display:  flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        transform: translatex(-100%);
+    }
+    .menu li{
+        margin: 15px 0 ;
+    }
+
+    .menu.active{
+        transform: translatex(0);
+    }
+}
+
+.scrol{
+    height: 100px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+    display: block;
+    padding: 0 2.5em;
+    
+    
+}
+nav a:hover{
+color: rgb(0, 0, 0);
+transition: .2s;
+
+
+
+}
+
+
+nav li ul{
+    display: none;
+    
+}
+nav li:hover ul {
+    display: block;
+
+}
+/* Soporte*/
+
+
+
+
+
+/*Pie de pagina footer soporte*/
+footer {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px; /* Espaciado interior */
+    clear: both; /* Limpiar floats */
+    
+}
+  /* Opcionalmente, puedes añadir un margen superior para separar el pie de página del contenido */
+  main {
+    margin-bottom: 200px;
+  }
+  
+
+
+/*Nuestras Redes Sociales*/
+.Redes .fb:hover{
+  color: blue;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .ig:hover{
+  color: rgba(235, 13, 224, 0.699);
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .tw:hover{
+  color: #1D9DF0;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.Redes .yt:hover{
+  color: rgba(255, 0, 0, 0.699);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.Redes .what:hover{
+  color: rgba(37, 172, 66, 0.979);
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+
+
+
+.Copyrigth {
+    text-align: center;
+    font-size: 14px;
+    color: #e9e7e7;
+    opacity: 45%;
+    margin: 15px;
+
+}
+.Redes a{
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px;
+  text-decoration: none;
+  list-style: none;
+  margin: 5px;
+
+}
+
+
+.Redes a:hover {
+  
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 black ;
+ 
+  filter: none;
+
+}
+
+/*Fondos de redes*/
+.Redes .fb{
+    color: rgb(0, 0, 0);
+   
+  }
+  .Redes .ig{
+    color: rgba(0, 0, 0, 0.699);
+    
+  }
+  .Redes .tw{
+    color: #000000;
+
+  }
+  .Redes .yt{
+    color: rgba(0, 0, 0, 0.699);
+    
+    
+  }
+  
+  .Redes .what{
+    color: rgba(0, 0, 0, 0.979);
+    
+  }
