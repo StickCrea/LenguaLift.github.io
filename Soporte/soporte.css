@@ -6,8 +6,13 @@
 }
 
 body {
-    background: url(imgssoport/Fondo3.jpg);
+   
+    background-image: url(Imgs/Fondo1.avif);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
 }
 
 

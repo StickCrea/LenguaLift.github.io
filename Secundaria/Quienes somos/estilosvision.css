@@ -1,95 +1,96 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .nav{
-    position: fixed ;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 25px;
-    transition: all 0.5s ease;
+  position: fixed ;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  transition: all 0.5s ease;
 }
 .nav.active{
-    background: rgba(255, 255, 255, 0.848);
-    padding: 15px;
+  background: rgba(255, 255, 255, 0.848);
+  padding: 15px;
 }
 .nav.active .logo,
 .nav.active a,
 .nav.active .menu-btn i{
-    color: #000;
+  color: #000;
 }
 .nav.active a:hover{
-    background: #fdfdfd;
-    color: #000000;
+  background: #fdfdfd;
+  color: #000000;
 }
 .menu{
-    display: flex;
+  display: flex;
 }
 .menu li{
-    list-style: none;
-    margin: 10px;
+  list-style: none;
+  margin: 10px;
 }
 .menu li a{
-    color: #000000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.5s ease;
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.5s ease;
 }
 .menu li a:hover{
-    padding: 5px 10px;
-    background: #fff;
-    color: #000;
-    border-radius: 15px;
+  padding: 5px 10px;
+  background: #fff;
+  color: #000;
+  border-radius: 15px;
 }
 
 .menu-btn{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    display: none;
-    cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  display: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width:1024px){
-    .menu-btn{
-        display: block;
-    }
-    .menu{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 353px;
-        height: 100vh;
-        background: #4ec3dd;
-        display:  flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.5s ease;
-        transform: translatex(-100%);
-    }
-    .menu li{
-        margin: 15px 0 ;
-    }
+  .menu-btn{
+      display: block;
+  }
+  .menu{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 353px;
+      height: 100vh;
+      background: #4ec3dd;
+      display:  flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+      transform: translatex(-100%);
+  }
+  .menu li{
+      margin: 15px 0 ;
+  }
 
-    .menu.active{
-        transform: translatex(0);
-    }
+  .menu.active{
+      transform: translatex(0);
+  }
 }
 
 .scrol{
-    height: 100px;
+  height: 100px;
 }
 
 nav a{
-    text-decoration: none;
-    color: rgb(12, 12, 12);
-    display: block;
-    padding: 0 2.5em;
-    
-    
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  display: block;
+  padding: 0 2.5em;
+  
+  
 }
 nav a:hover{
 color: rgb(0, 0, 0);
@@ -101,154 +102,165 @@ transition: .2s;
 
 
 nav li ul{
-    display: none;
-    
+  display: none;
+  
 }
 nav li:hover ul {
-    display: block;
+  display: block;
 
 }
 
 
 section{
-    width: 700px;
-    padding: 40px;
-    background: rgb(226, 226, 226);
-    margin: auto;
-    margin-top:150px;
-    display: block;
-    flex-direction: column;
-    gap: 20px;
-   
+  width: 500px;
+  padding: 40px;
+  background: rgb(255, 250, 250);
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  flex-direction: column;
+  gap: 20px;
+ 
 
 }
 
 summary{
-    background: rgb(41, 27, 192);
-    color: white;
-    padding: 20px;
-    list-style: none;
-    cursor: pointer;
-    font-family: cursive;
+  background: rgb(41, 27, 192);
+  color: white;
+  padding: 30px;
+  list-style: none;
+  cursor: pointer;
+  font-family: cursive;
 }
 
 details p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: justify;
-    font-size: 150%;
-    
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  font-size: 120%;
+  
 }
 .parrafo p{
-    left: 25px;
-    
-    
-   
+  left: 25px;
+  
+  
+ 
 }
 body{
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  
+  background-image: url();
 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    backdrop-filter:  blur( x);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter:  blur( x);
 }
 
 /*pie de pagina footer*/
 footer {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    padding: 20px; /* Espaciado interior */
-    clear: both; /* Limpiar floats */
-    
-}
-  /* Opcionalmente, puedes añadir un margen superior para separar el pie de página del contenido */
-  main {
-    margin-bottom: 100px;
-  }
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 20px; /* Espaciado interior */
+  clear: both; /* Limpiar floats */
   
+}
+/* Opcionalmente, puedes añadir un margen superior para separar el pie de página del contenido */
+main {
+  margin-bottom: 600px;
+}
+
 
 
 /*Nuestras Redes Sociales*/
 .Redes .fb:hover{
-  color: blue;
-  background: #ffffff;
-  border-radius: 10px;
+color: blue;
+background: #ffffff;
+border-radius: 10px;
 }
 .Redes .ig:hover{
-  color: rgba(235, 13, 224, 0.699);
-  background: #ffffff;
-  border-radius: 10px;
+color: rgba(235, 13, 224, 0.699);
+background: #ffffff;
+border-radius: 10px;
 }
 .Redes .tw:hover{
-  color: #1D9DF0;
-  background: #ffffff;
-  border-radius: 10px;
+color: #1D9DF0;
+background: #ffffff;
+border-radius: 10px;
 }
 .Redes .yt:hover{
-  color: rgba(255, 0, 0, 0.699);
-  background: #ffffff;
-  border-radius: 10px;
+color: rgba(255, 0, 0, 0.699);
+background: #ffffff;
+border-radius: 10px;
 }
 
 .Redes .what:hover{
-  color: rgba(37, 172, 66, 0.979);
-  background: #ffffff;
-  border-radius: 10px;
+color: rgba(37, 172, 66, 0.979);
+background: #ffffff;
+border-radius: 10px;
 }
 
 
 
 
 .Copyrigth {
-    text-align: center;
-    font-size: 14px;
-    color: #e9e7e7;
-    opacity: 45%;
-    margin: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #e9e7e7;
+  opacity: 45%;
+  margin: 15px;
 
 }
 .Redes a{
-  text-decoration: none;
-  font-size: 25px;
-  padding: 5px;
-  text-decoration: none;
-  list-style: none;
-  margin: 5px;
+text-decoration: none;
+font-size: 25px;
+padding: 5px;
+text-decoration: none;
+list-style: none;
+margin: 5px;
 
 }
 
 
 .Redes a:hover {
-  
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0 black ;
- 
-  filter: none;
+
+transform: translateY(-3px) scale(1.05);
+box-shadow: 0 5px 5px 0 black ;
+
+filter: none;
 
 }
 
 /*Fondos de redes*/
 .Redes .fb{
-    color: rgb(0, 0, 0);
-   
-  }
-  .Redes .ig{
-    color: rgba(0, 0, 0, 0.699);
-    
-  }
-  .Redes .tw{
-    color: #000000;
-
-  }
-  .Redes .yt{
-    color: rgba(0, 0, 0, 0.699);
-    
-    
-  }
+  color: rgb(0, 0, 0);
+ 
+}
+.Redes .ig{
+  color: rgba(0, 0, 0, 0.699);
   
-  .Redes .what{
-    color: rgba(0, 0, 0, 0.979);
-    
-  }
+}
+.Redes .tw{
+  color: #000000;
+
+}
+.Redes .yt{
+  color: rgba(0, 0, 0, 0.699);
+  
+  
+}
+
+.Redes .what{
+  color: rgba(0, 0, 0, 0.979);
+}
+
+.Infos{
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+width: 50%;
+margin-top: 100px;
+
+}
+.Infos:hover{
+transform: scale(1.05);
+
+
+}
