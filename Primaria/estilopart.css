@@ -1,9 +1,9 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    box-sizing: 5px;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  box-sizing: 5px;
   }
   
   header {
@@ -27,12 +27,12 @@ body {
     margin-bottom: 70px;
   }
   
-  footer {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    padding: 20px; /* Espaciado interior */
-    clear: both; /* Limpiar floats */
+footer {
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 20px; /* Espaciado interior */
+  clear: both; /* Limpiar floats */
     
   }
   
@@ -189,11 +189,6 @@ margin: 10px;
 }
 section p {
   font-size: 18px;
- 
-  
-  
-  
-
 }
 /*Boton Acceder*/
 .Acceder {
@@ -203,6 +198,7 @@ section p {
   text-align: center;
   margin: 0 auto;
   display: inline-block;
+  
   
   cursor: pointer;
   overflow: hidden;
@@ -215,8 +211,8 @@ section p {
 
 
 .Acceder:hover {
-  background-color: #E31B6D;
-  color: #fff;
+  background-color: #ffffff;
+  color: #fdf6f6;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -228,7 +224,7 @@ section p {
   transform: translateX(-50%);
   width: 0%;
   height: 100%;
-  background-color: #E31B6D;
+  background-color: #1baae3;
   transition: all 0.3s ease-out;
   z-index: -1;
 }
@@ -247,7 +243,7 @@ section p {
 }
 
 .Acceder:hover a {
-  color: #fff;
+  color: #000000;
 }
 
 .Acceder:active {
@@ -257,5 +253,24 @@ section p {
 .Acceder:active::before {
   height: 50%;
 }
+main ul li{
+  text-decoration: none;
+  list-style: none;
+}
+
+/*Slider*/
+  .slider {
+  width: 100%;
+  }
+  .slide {
+  width: 100%;
+  text-align: center;
+  }
+  .slide img {
+  width: 100%;
+  max-height: 400px;      
+  object-fit: cover;
+}
+
 
 
