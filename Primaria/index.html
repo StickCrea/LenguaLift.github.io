@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LinguaLift</title>
+    <title>LenguaLift</title>
     <link class="icon" rel="shortcut icon" href="img/image.png">
     <link rel="stylesheet" href="estilopart.css">
     <script src="https://kit.fontawesome.com/51877c6006.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.slider').slick({
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          arrows: false,
+          pauseOnHover: false
+        });
+      });
+    </script>
+    
+    
 </head>
 <body>
   
     <header>
-        <h1 id="dignified">LinguaLift</h1>
+        <h1 id="dignified">LenguaLift</h1>
         
     </header>
      
     
-      
-      <main>
-      
+    
+        <div class="slider">
+          <div class="slide">
+            <img src="img/1.jpg" alt="slide1">
+          </div>
+          <div class="slide">
+            <img src="img/2.jpg" alt="slide2">
+          </div>
+          <div class="slide">
+            <img src="img/3.jpg" alt="slide3">
+          </div>
+          <div class="slide">
+            <img src="img/4.jpg" alt="slide3">
+          </div>
+        </div>
+        <main>
         <h1>Nuestros servicios</h1>
-        <p>En LinguaLift, nos enfocamos en brindar una experiencia de aprendizaje de inglés efectiva y personalizada. Ofreciendo los siguientes servicios:</p>
+        <p>En LenguaLift, nos enfocamos en brindar una experiencia de aprendizaje de inglés efectiva y personalizada. Ofreciendo los siguientes servicios:</p>
         <ul>
           <li>
             <h2>Clases en línea</h2>
@@ -44,6 +75,7 @@
               calidad en un plazo de tiempo razonable.</p>
           </li>
         </ul>
+        <h4>Para mas informacion preciona el siguiente Boton</h4>
         <h3 class="Acceder"> <a href=""> Acceder</a></h3>
         
 
