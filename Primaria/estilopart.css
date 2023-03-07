@@ -227,6 +227,7 @@ section p {
   background-color: #1baae3;
   transition: all 0.3s ease-out;
   z-index: -1;
+  border-radius: 10px;
 }
 
 .Acceder:hover::before {
@@ -259,18 +260,95 @@ main ul li{
 }
 
 /*Slider*/
-  .slider {
-  width: 100%;
-  }
-  .slide {
-  width: 100%;
-  text-align: center;
-  }
-  .slide img {
-  width: 100%;
-  max-height: 400px;      
-  object-fit: cover;
+.slider-container {
+  margin: 0 auto;
+  max-width: 800px;
+  background: linear-gradient(to bottom right, #ffffff, #ffffff);
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 5px;
+  justify-content: center;
+  box-shadow: 0, 10px, 10px black;
+  margin-top: 150px;
+  text-align:  center;
+  border-radius: 10px;
+  box-shadow: 5px 3px 10px rgb(3, 1, 1);
+  
 }
 
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  
+  
+}
 
+.slide {
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.slide img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Agregamos flechas de navegación */
+.slider-container .prev, .slider-container .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.slider-container .prev {
+  left: 20px;
+}
+
+.slider-container .next {
+  right: 20px;
+}
+
+/* Cambiamos el color de las flechas al pasar el mouse por encima */
+.slider-container .prev:hover, .slider-container .next:hover {
+  color: #555;
+}
+
+/* Cambiamos el estilo del punto activo */
+.slider-container .dots {
+  position: absolute;
+  bottom: 20px;
+
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slider-container .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-container .dot.active {
+  background-color: #555;
+}
 

@@ -120,6 +120,7 @@ section{
   display: block;
   flex-direction: column;
   gap: 20px;
+  margin-top: 10px;
  
 
 }
@@ -131,12 +132,15 @@ summary{
   list-style: none;
   cursor: pointer;
   font-family: cursive;
+ 
+  
 }
 
 details p{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: justify;
   font-size: 120%;
+ 
   
 }
 .parrafo p{
