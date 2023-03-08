@@ -41,11 +41,14 @@ body {
     justify-content: flex-end;
     align-items: center;
     height: 60px;
+    
   }
   
   nav ul {
     display: flex;
-    margin-right: 30px;
+    margin-right: 40px;
+    margin: top 0 auto;
+    justify-content: center;
   }
   
   nav ul li {
@@ -153,6 +156,7 @@ body {
     border-radius: 5px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    border: 2px solid rgb(0, 7, 6);
   }
   
   .plan:hover {
@@ -192,6 +196,7 @@ body {
   .plan:nth-child(2) {
     background-color: #1E90FF;
     color: #FFF;
+    
   }
   
   .plan:nth-child(2) h3,
@@ -320,3 +325,57 @@ body {
     margin: 0;
   }
 
+  .btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-secondary {
+    color: #ffffff;
+    border: 2px solid rgb(0, 7, 6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ffffff;
+    color: #1abc9c;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+.hero {
+  background: url(imgs/Fondoprinc.avif);
+}
+/* Estilo del contenedor del logo */
+.logo {
+  width: 100%;
+  background: blue;
+
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+  width: 15%;
+  
+  
+}
+
+/* Estilo del texto del logo */
+.logo span {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-size: 36px;
+}
+
+/* Efecto de rotación al pasar el ratón por encima */
+
+main{
+  margin-top: 100px;
+}

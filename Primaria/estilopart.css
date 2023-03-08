@@ -1,70 +1,71 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  box-sizing: 5px;
-  }
-  
-  header {
-    background-color: #333; /* Color de fondo */
-    color: #fff; /* Color del texto */
-    padding: 20px; /* Espaciado interior */
-    text-align:left; /* Alineación del texto */
-    
-  }
-  
- 
-  
-  main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    
-  }
-  
-  section {
-    margin-bottom: 70px;
-  }
-  
-footer {
-  background-color: #333; /* Color de fondo */
-  color: #fff; /* Color del texto */
-  text-align: center; /* Alineación del texto */
-  padding: 20px; /* Espaciado interior */
-  clear: both; /* Limpiar floats */
-    
-  }
-  
-  /* Opcionalmente, puedes añadir un margen superior para separar el pie de página del contenido */
-  main {
-    margin-bottom: 60px;
-  }
-  
-main{
-  margin-top: 150px;
-  text-align:  center;
- 
-  backdrop-filter: blur(50px);
-  border-radius: 10px;
-  box-shadow: 5px 3px 10px rgb(3, 1, 1);
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+font-size: 16px;
+box-sizing: 5px;  
 
 }
-/*Nuestras Redes Sociales*/
+
+/*Definimos los estilos para la cabecera de la página*/
+header {
+background-color: #333; 
+color: #fff; 
+padding: 20px;
+text-align: left; 
+}
+
+/*Definimos los estilos para el contenido principal de la página*/
+main {
+padding: 20px; 
+max-width: 800px; 
+margin: 0 auto; 
+}
+
+/* Definimos los estilos para cada sección del contenido */
+section {
+margin-bottom: 70px; 
+}
+
+/* Definimos los estilos para el pie de página de la página*/
+footer {
+background-color: #333; 
+color: #fff; 
+text-align: center; 
+padding: 20px;
+clear: both; 
+}
+
+/* Opcionalmente, añadimos un margen inferior para separar el pie de página del contenido principal */
+main {
+  margin-bottom: 60px;
+}
+
+/* Definimos los estilos para el contenido principal de la página */
+main {
+margin-top: 150px; 
+text-align: center; 
+backdrop-filter: blur(50px);
+border-radius: 10px; 
+box-shadow: 5px 3px 10px rgb(3, 1, 1); 
+}
+
+/* Definimos los estilos para los enlaces de redes sociales */
 .Redes .fb:hover{
-  color: blue;
-  background: #ffffff;
-  border-radius: 10px;
+color: blue; 
+background: #ffffff;
+border-radius: 10px;
 }
-.Redes .ig:hover{
-  color: rgba(235, 13, 224, 0.699);
-  background: #ffffff;
-  border-radius: 10px;
+.Redes .ig:hover {
+color: rgba(235, 13, 224, 0.699);
+background: #ffffff;
+border-radius: 10px;
 }
-.Redes .tw:hover{
-  color: #1D9DF0;
-  background: #ffffff;
-  border-radius: 10px;
+.Redes .tw:hover {
+color: #1D9DF0;
+background: #ffffff;
+border-radius: 10px;
 }
 .Redes .yt:hover{
   color: rgba(255, 0, 0, 0.699);
