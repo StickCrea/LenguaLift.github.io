@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background: url(imgs/pexels-photo-796602.webp);
+}
 
 .nav{
   position: fixed ;
@@ -267,4 +270,30 @@ margin-top: 100px;
 transform: scale(1.05);
 
 
+}
+.logo {
+  width:100px ;
+  
+
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+  width: 15%;
+  
+  
+}
+
+/* Estilo del texto del logo */
+.logo span {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-size: 36px;
+}
+
+/* Efecto de rotación al pasar el ratón por encima */
+
+main{
+  margin-top: 100px;
 }
