@@ -1,12 +1,18 @@
-const nav = document.querySelector('.nav');
-const menu_btn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
 
-    window.addEventListener('scroll', function(){
-        nav.classList.toggle('active', window.scrollY >0);
+  
+  const menuLinks = document.querySelectorAll('.menu a');
 
-    })
+  menuLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+  
+      // Remove active class from all links
+      menuLinks.forEach((link) => {
+        link.classList.remove('active');
+      });
+  
+      // Add active class to clicked link
+      link.classList.add('active');
+    });
+  });
 
-    menu_btn.addEventListener('click', () => {
-        menu.classList.toggle('active')
-})
