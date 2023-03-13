@@ -7,6 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -71,7 +72,7 @@ body {
 .btn-primary {
     background-color: transparent;
     border: 1px solid #fff;
-    transition: background-color .5s;
+    transition: background-color .2s;
 }
 .btn-primary:hover {
     background-color: #fff;
@@ -80,7 +81,7 @@ body {
 .btn-second {
     background-color: #58af9b;
     border: 1px solid #58af9b;
-    transition: background-color .5s;
+    transition: background-color .1s;
 }
 .btn-second:hover {
     background-color: #fff;
@@ -113,7 +114,7 @@ body {
     margin-left: 10px;
 }
 .link-social-media .item-social-media {
-    transition: background-color .5s;
+    transition: background-color .1s;
 }
 .link-social-media:hover .item-social-media{
     background-color: #58af9b;
@@ -198,22 +199,22 @@ input:-webkit-autofill
     border-bottom-left-radius: 0;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    animation: slidein 1.3s;
+    animation: slidein .3s;
 
     z-index: 12;
 }
 #img_logo {
-  transition: all .3s;
+  transition: all .1s;
 }
 #img_2 {
   margin-bottom: 20px;
   opacity: 0;
-  transition: opacity 3s;
+  transition: opacity 1s;
 }
 
 .sign-up-js .content::before {
-    animation: slideout 1.3s;
-    transition: all 3s;
+    animation: slideout .1s;
+    transition: all 1s;
     z-index: 12;
 }
 
@@ -242,7 +243,7 @@ input:-webkit-autofill
 .sign-up-js .second-content .second-column {
     position: relative;
     z-index: -1;
-    animation: deslocamentoDir 1.3s;
+    animation: deslocamentoDir .3s;
 }
 
 

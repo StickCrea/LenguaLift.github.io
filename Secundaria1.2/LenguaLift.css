@@ -8,7 +8,7 @@ body {
   
   
   .container {
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 0 20px;
   }
@@ -31,33 +31,32 @@ body {
     left: 0;
     right: 0;
     z-index: 999;
+   
   }
   
   .container-1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    height: 100%;
   }
   
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+   
   }
   
   .logo img {
     height: 90px;
   }
   
-  .menu {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+
   
   .menu li {
     position: relative;
+    margin-left: 20px;
   }
  
   .menu li:hover > ul {
@@ -67,7 +66,7 @@ body {
   .menu ul {
     position: absolute;
     top: 100%;
-    left: 0;
+    margin-left: 20px;
     display: none;
     list-style: none;
     margin: 0;
@@ -90,6 +89,7 @@ body {
     color: #333;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    margin-left: 20px;
   }
   
   .menu ul a:hover {
@@ -113,9 +113,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
-    
     padding: 20px;
+    margin-right: 0;
+  
+    
   }
   
   .menu a {
@@ -125,7 +126,7 @@ body {
     color: #000000;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
-    margin-right: 20px;
+  
   }
   
   .menu a:last-of-type {
@@ -138,6 +139,34 @@ body {
     border-bottom: 3px solid #16c0b2;
   }
   
+  .home-link {
+    display: flex;
+    align-items: center;
+    padding-left: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  .home-link i {
+    margin-right: 5px; /* Espacio entre el icono y el borde del enlace */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px; /* ajustar el tamaño según sea necesario */
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    color: #333; /* cambiar el color según sea necesario */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
   
   @media screen and (max-width: 991px) {
     .menu {
@@ -145,6 +174,46 @@ body {
       flex-direction: column;
     }
   }
+  /*Menu Hamburguesa */
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 6px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+    .menu-toggle {
+      display: block;
+    }
+    .menu li {
+      margin-left: 0;
+    }
+    .menu li:hover > ul {
+      display: none;
+    }
+  }
+
   
   /* Estilos de secciones */
   
@@ -389,9 +458,7 @@ body {
     opacity: 0.8;
   }
 /*Nuestras Redes Sociales*/
-.footer{
-  background-color: #16c0b2;
-}
+
 .Redes .fb:hover{
     color: blue;
     background: #ffffff;
@@ -418,7 +485,7 @@ body {
     background: #ffffff;
     border-radius: 10px;
   
-  }
+}
   .Redes a{
     text-decoration: none;
     font-size: 25px;
@@ -428,31 +495,31 @@ body {
     list-style: none;
     
   
-  }
+}
   
   
   .Redes a:hover {
     
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 5px 5px 0 black ;
-    filter: none;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 black ;
+  filter: none;
   
-  }
+}
   
   .red h2{
     margin: 0;
   }
 
   .btn {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 20px;
-    border-radius: 50px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-  }
+ display: inline-block;
+ font-size: 16px;
+ font-weight: bold;
+ padding: 12px 20px;
+ border-radius: 50px;
+ text-align: center;
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
+}
   
   .btn-secondary {
     color: #ffffff;
@@ -468,11 +535,11 @@ body {
   }
   
 .features {
-    background: url(imgs/FoniNGLISH.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  background: url(imgs/FoniNGLISH.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
   
 /*Estilo Contenedor hero */
 .hero {

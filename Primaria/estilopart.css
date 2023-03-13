@@ -87,7 +87,7 @@ header {
 
 /*Definimos los estilos para el contenido principal de la página*/
 main {
-padding: 20px; 
+padding: 30px; 
 max-width: 800px; 
 margin: 0 auto; 
 }
@@ -99,16 +99,17 @@ margin-bottom: 70px;
 
 /* Definimos los estilos para el pie de página de la página*/
 footer {
-background-color: #333; 
-color: #fff; 
+background-color:  #ffffff; 
+color: #000000; 
 text-align: center; 
-padding: 20px;
+padding: 10px;
 clear: both; 
+position: relative;
 }
 
 /* Opcionalmente, añadimos un margen inferior para separar el pie de página del contenido principal */
 main {
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 /* Definimos los estilos para el contenido principal de la página */
@@ -154,7 +155,7 @@ border-radius: 10px;
 .Copyrigth {
     text-align: center;
     font-size: 14px;
-    color: #e9e7e7;
+    color: #000000;
     opacity: 45%;
 
 }
