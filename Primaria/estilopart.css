@@ -11,11 +11,21 @@ box-sizing: 5px;
 
 header {
   width: 100%;
-  background: #333;
+  background: #16c0b2;
   color: #fff;
   
 }
-
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* Estilos para el logo */
 
 .Logo {
@@ -40,6 +50,7 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+    
   }
   
   header {
@@ -49,8 +60,21 @@ header {
     text-align: center;
   }
   
-  .Fras {
+  /*.Fras {
     font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  } */
+  .Fras {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 0;
+    padding-left: 20px;
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #fff;
     text-shadow: 2px 2px #000;
@@ -270,7 +294,7 @@ section p {
   transform: translateX(-50%);
   width: 0%;
   height: 100%;
-  background-color: #1baae3;
+  background-color:#16c0b2;
   transition: all 0.3s ease-out;
   z-index: -1;
   border-radius: 10px;
@@ -355,18 +379,27 @@ main ul li{
   width: 100%;margin-top: 150px;
 }
 .deepl {
-  color: white; 
-  background-color: blue; 
-  padding: 10px; 
-  border-radius: 5px; 
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  margin-right: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #16c0b2;
+  transition: background-color 0.3s ease;
+  margin: 20px;
 }
 
 .deepl:hover {
-  background-color: darkblue; /* Cambia el fondo del enlace cuando se pasa el ratón por encima */
-  cursor: pointer; /* Cambia el cursor a una mano cuando se pasa el ratón por encima */
+  background-color: #fcfcfc;
+  cursor: pointer;
+  color: #1432dae3;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  
 }
+
 
 .slider {
   display: flex;
@@ -438,4 +471,3 @@ main ul li{
 .slider-container .dot.active {
   background-color: #555;
 }
-
