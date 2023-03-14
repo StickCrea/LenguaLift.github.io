@@ -30,7 +30,7 @@ body {
     width: 300px;
     margin: 25px;
     padding: 40px 20px;
-    background: linear-gradient(-45deg, #1201ff, #9a4eff);
+    background: #2f00ff;
     border-radius: 15px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -146,6 +146,7 @@ nav {
 
 .menu li {
   position: relative;
+  font-size: 20px;
 }
 
 .menu li:hover > ul {
@@ -208,12 +209,12 @@ nav {
 
 .menu a {
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   color: #000000;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
-  margin-right: 20px;
+  
 }
 
 .menu a:last-of-type {
@@ -246,125 +247,60 @@ nav {
 
 
 
-@media screen and (max-width: 991px) {
-  .menu {
-    display: none;
-    flex-direction: column;
-  }
-}
-
-
-/*Pie de pagina footer soporte*/
-/* Estilos para el pie de página */
-footer {
-  background-color: #ffffff; 
-  color: #333333; 
-  text-align: center; 
-  padding: 2rem;
-  position:absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-/* Estilos para el contenido principal */
-main {
-  max-width: 100%; /* Limita el ancho máximo del contenido principal */
-  margin: 0 auto; /* Centra el contenido principal en la página */
- 
-}
-
 /* Estilos para las imágenes */
-img {
-  max-width: 100%; /* Limita el ancho máximo de las imágenes */
-  height: auto; /* Ajusta la altura de las imágenes para mantener su proporción */
+main{
+  margin-bottom: 100px;
+}
+footer {
+  background: white;
+  text-align: center;
+  padding: 20px 0;
+  
 }
 
-
-
-/*Nuestras Redes Sociales*/
-.Redes .fb:hover{
-  color: blue;
-  background: #ffffff;
-  border-radius: 10px;
+.Redes a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: #000000;
+  transition: all 0.3s ease;
 }
-.Redes .ig:hover{
-  color: rgba(235, 13, 224, 0.699);
-  background: #ffffff;
-  border-radius: 10px;
-}
-.Redes .tw:hover{
-  color: #1D9DF0;
-  background: #ffffff;
-  border-radius: 10px;
-}
-.Redes .yt:hover{
-  color: rgba(255, 0, 0, 0.699);
-  background: #ffffff;
-  border-radius: 10px;
-}
-
-.Redes .what:hover{
-  color: rgba(37, 172, 66, 0.979);
-  background: #ffffff;
-  border-radius: 10px;
-}
-
-
-
-
-.Copyrigth {
-    text-align: center;
-    font-size: 14px;
-    color: #000000;
-    opacity: 45%;
-    margin: 15px;
-
-}
-.Redes a{
-  text-decoration: none;
-  font-size: 25px;
-  padding: 5px;
-  text-decoration: none;
-  list-style: none;
-  margin: 5px;
-
-}
-
 
 .Redes a:hover {
-  
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 5px 0 black ;
- 
-  filter: none;
-
+  transform: translateY(-5px);
 }
 
-/*Fondos de redes*/
-.Redes .fb{
-    color: rgb(0, 0, 0);
-   
-  }
-  .Redes .ig{
-    color: rgba(0, 0, 0, 0.699);
-    
-  }
-  .Redes .tw{
-    color: #000000;
+.fb:hover {
+  color: #3b5998;
+}
 
-  }
-  .Redes .yt{
-    color: rgba(0, 0, 0, 0.699);
-    
-    
-  }
-  
-  .Redes .what{
-    color: rgba(0, 0, 0, 0.979);
-    
-  }
+.ig:hover {
+  color: #C13584;
+}
 
-   
-    
-    
+.tw:hover {
+  color: #1DA1F2;
+}
+
+.yt:hover {
+  color: #FF0000;
+}
+
+.what:hover {
+  color: #25D366;
+}
+
+.Copyrigth {
+  margin-top: 20px;
+  color: #00000086;
+  font-size: 14px;
+}
+
+.Copyrigth p {
+  margin: 0;
+}
+
+.Copyrigth a {
+  color: #fff;
+  text-decoration: none;
+}
+
