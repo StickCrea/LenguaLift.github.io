@@ -175,6 +175,53 @@ body {
     }
   }
   /*Menu Hamburguesa*/
+  @media screen and (max-width: 768px) {
+    .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    z-index: 1;
+    }
+    
+    .menu li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    }
+    
+    .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    }
+    
+    .menu-icon i {
+    vertical-align: middle;
+    }
+    
+    .active.home-link {
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    padding: 10px;
+    }
+    
+    .menu-icon.active i {
+    transform: rotate(90deg);
+    }
+    
+    .menu-icon.active + .menu {
+    display: block;
+    }
+    }
 
 /* Estilos para el icono de hamburguesa */
 

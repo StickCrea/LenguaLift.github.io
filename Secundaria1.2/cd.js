@@ -17,10 +17,4 @@ menuLinks.forEach((link) => {
 })
 
 
-/* Función para desplegar el menú en pantallas pequeñas */
-const hamburgerIcon = document.querySelector('.hamburger-icon');
-const menuItems = document.querySelector('.menu-items');
 
-hamburgerIcon.addEventListener('click', () => {
-  menuItems.classList.toggle('active')
-})

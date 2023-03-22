@@ -4,15 +4,16 @@
 
   menuLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
-      e.preventDefault();
+      e.preventDefault()
   
       // Remove active class from all links
       menuLinks.forEach((link) => {
-        link.classList.remove('active');
-      });
+        link.classList.remove('active')
+      })
   
       // Add active class to clicked link
-      link.classList.add('active');
-    });
-  });
+      link.classList.add('active')
+    })
+  })
+  
 

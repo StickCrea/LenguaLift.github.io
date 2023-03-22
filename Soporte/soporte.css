@@ -7,12 +7,12 @@
 
 body {
    
-    background: url(Imgs/Newfond.avif);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+  background: url(Imgs/Newfond.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-top: 90px; /* Altura del header */
     
 }
 
@@ -114,7 +114,7 @@ ul {
 }
 header {
   background-color: #faf7f7;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
