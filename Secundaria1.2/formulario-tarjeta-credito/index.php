@@ -4,11 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Planes</title>
+	<title>Planes_Pagar</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/estilos.css">
+	<script src="https://kit.fontawesome.com/51877c6006.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="img/logos/Logo_1.png">
 </head>
+
 <body>
+
+
 	<div class="contenedor">
 
 		<!-- Tarjeta -->
@@ -65,11 +70,11 @@
 		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
 			<div class="grupo">
 				<label for="inputNumero">Número Tarjeta</label>
-				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+				<input type="text" id="inputNumero" name="Numtarjeta" maxlength="19" autocomplete="off">
 			</div>
 			<div class="grupo">
 				<label for="inputNombre">Nombre</label>
-				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+				<input type="text" id="inputNombre" name="Nombre" maxlength="19" autocomplete="off">
 			</div>
 			<div class="flexbox">
 				<div class="grupo expira">
@@ -92,13 +97,29 @@
 
 				<div class="grupo ccv">
 					<label for="inputCCV">CCV</label>
-					<input type="text" id="inputCCV" maxlength="3">
+					<input type="text" id="inputCCV"  maxlength="3">
 				</div>
+
+				
+				
 			</div>
+			<div class="grupo-Plan">
+				<label for="selectPlan">Selecciona tu Plan</label>
+				<div class="grupo-seleccionar">
+				  <select name="plan" id="selectPlan">
+					<option disabled selected>Plan</option>
+					<option value="basico">Básico</option>
+					<option value="intermedio">Intermedio</option>
+					<option value="avanzado">Avanzado</option>
+				  </select>
+				 
+				</div> <br><br>
+			</div>
+			
 			<button type="submit" class="btn-enviar">Enviar</button>
 			
 		</form>
-		<p>Realiza Tu Pago En Efectivo </p>
+		<p class="titleEfec">Realiza Tu Pago En Efectivo </p>
 		<div class="Efectivo" >
 		<ul>
 			<li>Bancolombia
@@ -134,12 +155,37 @@
 				</ul>
 			</li>
 			</li>
-		</ul>
+		 </ul>
 
 		</div>
 	</div>
 
 	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
+	<footer> 
+		<h3>Redes Sociales</h3>
+		<div class="Redes">
+		 <a href="#" class="fb"><i class= "fa-brands fa-facebook" ></i></a>
+			
+		  <a href="#"class="ig"><i class="fa-brands fa-instagram"></i></a>
+
+		  <a href="#"class="tw"><i class="fa-brands fa-twitter" ></i></a>
+
+		  <a href="#"class="yt"><i class="fa-brands fa-youtube" ></i></a></li> 
+
+		  <a href="#"class="what"><i class="fa-brands fa-whatsapp"></i></a></li> 
+		  
+
+		
+		  <hr>
+		  <div class="Copyrigth">
+
+			 <p>&copy; 2023 LinguaLift. Todos los derechos reservados.</p>
+
+		  </div>
+	  
+	</footer>
+	
 </body>
 </html>
+<

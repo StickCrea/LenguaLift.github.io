@@ -336,4 +336,79 @@ body {
 	  min-width: auto;
 	}
   }
-  
+  footer {
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+}
+
+.Redes {
+	margin: 20px auto;
+}
+
+.Redes a {
+	color: #555;
+	display: inline-block;
+	font-size: 24px;
+	margin: 0 10px;
+	transition: color 0.3s;
+}
+
+.Redes a:hover {
+	color: #1da1f2;
+}
+
+.Redes a.fb:hover {
+	color: #3b5998;
+}
+
+.Redes a.ig:hover {
+	color: #c13584;
+}
+
+.Redes a.tw:hover {
+	color: #1da1f2;
+}
+
+.Redes a.yt:hover {
+	color: #ff0000;
+}
+
+.Redes a.what:hover {
+	color: #25D366;
+}
+
+.Copyrigth {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #555;
+}
+
+.Copyrigth p {
+	margin: 0;
+}
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+	.Redes a {
+		font-size: 20px;
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.Redes a {
+		font-size: 16px;
+		margin: 0 2px;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.Redes {
+		margin: 10px auto;
+	}
+	.Redes a {
+		font-size: 14px;
+		margin: 0 1px;
+	}
+}
