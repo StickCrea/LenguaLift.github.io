@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,37 +8,29 @@
     <link rel="stylesheet" href="LenguaLift.css">
     <script src="https://kit.fontawesome.com/51877c6006.js" crossorigin="anonymous"></script>
       <title>LenguaLift</title>
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="inicio.css">
       <link class="icon" rel="shortcut icon" href="imgs/Logo_1.png">
       <script src="cd.js"></script>
      
 <body>
   
-  <header>
-    <div class="container-1">
-      <nav>
-        <div class="logo">
-          <a href="#"><img src="imgs/Logo_1.png" alt="logo"></a>
-          <h1 class="logo-text">LenguaLift</h1>
-        </div>
-        <ul class="menu">
-          <li><a class="active home-link" href="http://localhost/LenguaLift/Primaria/"><i class="fas fa-home"></i> Inicio</a></li>
-          <li><a href="http://localhost/LenguaLift/Secundaria/Quienes%20somos/Quienes_Somos.html">¿Quienes Somos?</a></li>
-          <li><a href="#pricing">Planes</a></li>
-          <li><a href="http://localhost/LenguaLift/Soporte/soporte.html">Ayuda</a></li>
-          <li>
-            <a href="#">Manuales</a>
-            <ul class="submenu">
-              <li><a href="#">Usuario</a></li>
-              <li><a href="#">Programador</a></li>
-            </ul>
-          </li>
-          <li><a href="http://localhost/LenguaLift/Secundaria1.2/Loguin/sitioweb/login.php">Login</a></li>
-          <li class="hamburger-icon"><span></span><span></span><span></span></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
+  <?php include('template/cabecera.php');?>
+  
+  <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="display-3">Welcome <?php echo $nombreUsuario; ?>! </h1>
+                    <p class="lead">Vamos a administrar nuestros libros en el sitio web</p>
+                    <hr class="my-2">
+                    <p>More info</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="seccion/planes.php" role="button">Administrar Planes</a>
+                    </p>
+                </div>
+            </div>
+
+<?php include('template/pie.php');?>
+
  
   <main>
         <section class="hero">
@@ -162,3 +155,4 @@
 
 </body>
 </html>
+        

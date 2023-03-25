@@ -9,12 +9,8 @@
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="https://kit.fontawesome.com/51877c6006.js" crossorigin="anonymous"></script>
 	<link rel="shortcut icon" href="img/logos/Logo_1.png">
-
 </head>
-
 <body>
-
-
 	<div class="contenedor">
 
 		<!-- Tarjeta -->
@@ -37,7 +33,7 @@
 
 						<div class="grupo" id="expiracion">
 							<p class="label">Expiracion</p>
-							<p class="expiracion"><span class="mes"  >MM</span> / <span class="year">AA</span></p>
+							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
 						</div>
 					</div>
 				</div>
@@ -68,87 +64,58 @@
 		</div>
 
 		<!-- Formulario -->
-		<form action="formulario-tarjeta.php" id="formulario-tarjeta" class="formulario-tarjeta" onsubmit="return validarFormulario()">
-	<div class="grupo">
-		<label for="inputNumero">Número Tarjeta</label>
-		<input type="text" id="inputNumero" name="inputNumero" maxlength="19" autocomplete="off">
-	</div>
-	<div class="grupo">
-		<label for="inputNombre">Nombre</label>
-		<input type="text" id="inputNombre" name="inputNombre" maxlength="19" autocomplete="off">
-	</div>
-	<div class="flexbox">
-		<div class="grupo expira">
-			<label for="selectMes">Expiracion</label>
-			<div class="flexbox" name="seletMes">
-				<div class="grupo-select">
-					<select id="selectMes">
-						<option disabled selected name="mes">Mes</option>
-					</select>
-					<i class="fas fa-angle-down"></i>
-				</div>
-				<div class="grupo-select">
-					<select name="selectYear" id="selectYear">
-						<option disabled selected name="selectYear">Año</option>
-					</select>
-					<i class="fas fa-angle-down"></i>
-				</div>
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero" name="Numtarjeta" maxlength="19" autocomplete="off">
 			</div>
-		</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombre</label>
+				<input type="text" id="inputNombre" name="Nombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Expiracion</label>
+					<div class="flexbox">
+						<div class="grupo-select">
+							<select name="mes" id="selectMes">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="grupo-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
 
-		<div class="grupo ccv">
-			<label for="inputCCV">CCV</label>
-			<input type="text" id="inputCCV" name="inputCCV" maxlength="3">
-		</div>
-	</div>
-	<div class="grupo-Plan">
-		<label for="selectPlan">Selecciona tu Plan</label>
-		<div class="grupo-seleccionar" name="selectPlan">
-			<select  id="selectPlan" name="selectPlan">
-				<option disabled selected >Plan</option>
-				<option value="basico" name="selectPlan">Básico</option>
-				<option value="intermedio" name="selectPlan">Intermedio</option>
-				<option value="avanzado" name="selectPlan">Avanzado</option>
-			</select>
-		</div>
-		<br><br>
-	</div>
+				<div class="grupo ccv">
+					<label for="inputCCV">CCV</label>
+					<input type="text" id="inputCCV"  maxlength="3">
+				</div>
 
-	<button type="submit" class="btn-enviar">Enviar</button>
-
-</form>
-
-<script>
-	function validarFormulario() {
-  // obtener los valores de los campos del formulario
-  var numeroTarjeta = document.getElementById("inputNumero").value;
-  var nombre = document.getElementById("inputNombre").value;
-  var mesExpiracion = document.getElementById("selectMes").value;
-  var yearExpiracion = document.getElementById("selectYear").value;
-  var ccv = document.getElementById("inputCCV").value;
-  var plan = document.getElementById("selectPlan").value;
-
-  // verificar si los campos están llenos
-  if (
-    numeroTarjeta == "" ||
-    nombre == "" ||
-    mesExpiracion == "" ||
-    yearExpiracion == "" ||
-    ccv == "" ||
-    plan == ""
-  ) {
-    // si alguno de los campos está vacío, mostrar un mensaje de error
-    alert("Por favor, complete todos los campos.");
-    return false; // impedir que el formulario se envíe
-  }
-
-  // si todos los campos están llenos, permitir el envío del formulario
-  return true;
-}
-
-</script>
-
-		
+				
+				
+			</div>
+			<div class="grupo-Plan">
+				<label for="selectPlan">Selecciona tu Plan</label>
+				<div class="grupo-seleccionar">
+				  <select name="plan" id="selectPlan">
+					<option disabled selected>Plan</option>
+					<option value="basico">Básico</option>
+					<option value="intermedio">Intermedio</option>
+					<option value="avanzado">Avanzado</option>
+				  </select>
+				 
+				</div> <br><br>
+			</div>
+			
+			<button type="submit" class="btn-enviar">Enviar</button>
+			
+		</form>
 		<p class="titleEfec">Realiza Tu Pago En Efectivo </p>
 		<div class="Efectivo" >
 		<ul>
@@ -215,7 +182,5 @@
 		  </div>
 	  
 	</footer>
-	
 </body>
 </html>
-<

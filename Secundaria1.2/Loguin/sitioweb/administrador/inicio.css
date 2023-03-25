@@ -1,0 +1,599 @@
+/* Estilos generales */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  
+  .container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+  }
+  /*Menu*/
+  header {
+    background-color: #faf7f7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+   
+  }
+  
+  .container-1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
+  
+  .logo img {
+    height: 90px;
+  }
+  
+
+  
+  .menu li {
+    position: relative;
+    margin-left: 20px;
+  }
+ 
+  .menu li:hover > ul {
+    display: block;
+  }
+  
+  .menu ul {
+    position: absolute;
+    top: 100%;
+    margin-left: 20px;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .menu ul li {
+    margin: 0;
+    width: 100%;
+  }
+  
+  .menu ul a {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    margin-left: 20px;
+  }
+  
+  .menu ul a:hover {
+    color: #EF233C;
+  }
+  
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 6px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-right: 0;
+  
+    
+  }
+  
+  .menu a {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  
+  }
+  
+  .menu a:last-of-type {
+    margin-right: 20px;
+  }
+  
+  .menu a:hover,
+  .menu a.active {
+    color: #16c0b2;
+    border-bottom: 3px solid #16c0b2;
+  }
+  
+  .home-link {
+    display: flex;
+    align-items: center;
+    padding-left: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  .home-link i {
+    margin-right: 5px; /* Espacio entre el icono y el borde del enlace */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px; /* ajustar el tamaño según sea necesario */
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    font-size: 2rem;
+    color: #333; /* cambiar el color según sea necesario */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+  }
+  /*Menu Hamburguesa*/
+  @media screen and (max-width: 768px) {
+    .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    z-index: 1;
+    }
+    
+    .menu li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    }
+    
+    .menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 24px;
+    }
+    
+    .menu-icon i {
+    vertical-align: middle;
+    }
+    
+    .active.home-link {
+    color: #fff;
+    background-color: #333;
+    border-radius: 4px;
+    padding: 10px;
+    }
+    
+    .menu-icon.active i {
+    transform: rotate(90deg);
+    }
+    
+    .menu-icon.active + .menu {
+    display: block;
+    }
+    }
+
+/* Estilos para el icono de hamburguesa */
+
+  
+  /* Estilos de secciones */
+  
+  section {
+    padding: 100px 0;
+  }
+  
+  section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .cta {
+    background-color: #1E90FF;
+    color: #FFF;
+    padding: 60px 0;
+  }
+  
+  .cta-heading {
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: pulse 1s ease-in-out infinite;
+  }
+  
+  .cta-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #FFF;
+    color: #1E90FF;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-btn:hover {
+    transform: scale(1.1);
+    background-color: #1E90FF;
+    color: #FFF;
+    
+    
+
+  }
+  /*Mas estilo cta*/
+  .cta {
+    background-color: #1ab8d4;
+    color: white;
+    padding: 50px;
+  }
+  
+  .cta h2 {
+    font-size: 3em;
+  }
+  
+  .cta .btn1 {
+    background-color: white;
+    color: #000000;
+    padding: 10px 30px;
+    font-size: 1.5em;
+    border-radius: 25px;
+    border: 2px solid white;
+  }
+  .cta .btn1:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    color: #1D9DF0;
+  }
+   
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .plan {
+    transition: all 0.3s ease;
+  }
+  
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  .plan {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .plan .btn {
+    transition: all 0.3s ease;
+  }
+  
+  .plan .btn:hover {
+    background-color: #FFF;
+    color: #1E90FF;
+  }
+  .pricing {
+    background-color: #FFF;
+  }
+  
+  .pricing h2 {
+    color: #1E90FF;
+    margin-bottom: 50px;
+  }
+  
+  .pricing-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .plan {
+    width: calc(33.33% - 20px);
+    background-color: #F5F5F5;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid rgb(0, 7, 6);
+  }
+  
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  
+  .plan h3 {
+    color: #1E90FF;
+    margin-bottom: 30px;
+  }
+  
+  .plan .price {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .plan ul {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .plan ul li {
+    margin-bottom: 10px;
+  }
+  
+  .plan .btn {
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s ease;
+  }
+  
+  .plan .btn:hover {
+    background-color: #FFF;
+    color: #1E90FF;
+   
+  }
+  
+  .plan:nth-child(2) {
+    background-color: #1ab8d4;
+    color: #FFF;
+   
+    
+  }
+  
+  .plan:nth-child(2) h3,
+  .plan:nth-child(2) .price {
+    color: #FFF;
+  }
+  
+  .features {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  
+  .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+  }
+  
+  .feature {
+    max-width: 300px;
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+  }
+  
+  .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature i {
+    font-size: 48px;
+    margin-bottom: 30px;
+    color: #007bff;
+    transition: transform 0.3s ease-in-out;
+    transform: rotateY(0);
+  }
+  
+  .feature:hover i {
+    transform: rotateY(360deg);
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+    color: #333;
+  }
+  
+  .feature:hover h3 {
+    color: #007bff;
+  }
+  
+  .feature p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #444;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+  
+  .feature:hover p {
+    opacity: 0.8;
+  }
+/*Nuestras Redes Sociales*/
+
+.Redes .fb:hover{
+    color: blue;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .Redes .ig:hover{
+    color: rgba(235, 13, 224, 0.699);
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .Redes .tw:hover{
+    color: #1D9DF0;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .Redes .yt:hover{
+    color: rgba(255, 0, 0, 0.699);
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .Redes .what:hover{
+    color: rgba(37, 172, 66, 0.979);
+    background: #ffffff;
+    border-radius: 10px;
+  
+}
+  .Redes a{
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+    list-style: none;
+    
+  
+}
+  
+  
+  .Redes a:hover {
+    
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0 black ;
+  filter: none;
+  
+}
+  
+  .red h2{
+    margin: 0;
+  }
+
+  .btn {
+ display: inline-block;
+ font-size: 16px;
+ font-weight: bold;
+ padding: 12px 20px;
+ border-radius: 50px;
+ text-align: center;
+ text-decoration: none;
+ transition: all 0.3s ease-in-out;
+}
+  
+  .btn-secondary {
+    color: #ffffff;
+    border: 2px solid rgb(0, 7, 6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #ffffff;
+    color: #1abc9c;
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  }
+  
+.features {
+  background: url(imgs/FoniNGLISH.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  
+/*Estilo Contenedor hero */
+.hero {
+  background-color: #F7F6F2;
+  padding: 50px ;
+  text-align: center;
+  
+}
+
+.hero-heading {
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2B2D42;
+}
+
+.hero-subheading {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: #8D99AE;
+}
+
+.hero-description {
+  font-size: 24px;
+  margin-bottom: 50px;
+  color: #4A4E69;
+}
+
+.hero-btn {
+  font-size: 18px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  background-color:  #16c0b2;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+  background-color: #D90429;
+}
+
+

@@ -1,6 +1,6 @@
 <?php
 
-    $conexion = mysqli_connect("localhost", "root", "", "login_register_db");
+    $conexion = mysqli_connect("localhost", "root", "", "lengualift");
     /*
     if($conexion){
         echo 'Conectado exitosamente a la base de datos';
