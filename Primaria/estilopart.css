@@ -331,74 +331,102 @@ main ul li{
   list-style: none;
 }
 
-/* Estilos para el contenedor del slider */
+/*Slider*/
+/* Aplicamos estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+  .slider-container {
+    margin-top: 100px;
+    padding: 5px;
+  }
+  .slide img {
+    max-height: 300px;
+  }
+  .slider-container .prev, .slider-container .next {
+    font-size: 20px;
+  }
+}
+
+/* Aplicamos estilos para pantallas medianas */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .slider-container {
+    max-width: 90%;
+    margin-top: 100px;
+  }
+  .slide img {
+    max-height: 400px;
+  }
+}
+
+/* Aplicamos estilos para pantallas grandes */
+@media only screen and (min-width: 1024px) {
+  .slider-container {
+    max-width: 1200px;
+    margin-top: 150px;
+  }
+  .slide img {
+    max-height: 500px;
+  }
+}
+
+/* Estilos generales */
 .slider-container {
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #ffffffcb, #ffffff);
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;margin-top: 150px;
+}
+.deepl {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #16c0b2;
+  transition: background-color 0.3s ease;
+  margin: 20px;
+}
+
+.deepl:hover {
+  background-color: #fcfcfc;
+  cursor: pointer;
+  color: #1432dae3;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  
+}
+
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
-/* Estilos para el slider */
-.slider {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Estilos para las diapositivas del slider */
 .slide {
-  display: block;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .slide img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  height: 100%;
 }
 
-/* Estilos para los botones de navegación */
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-}
-
-.prev {
-  left: 20px;
-}
-
-.next {
-  right: 20px;
-}
-
-/* Estilos para el icono de flecha */
-.fa-chevron-left,
-.fa-chevron-right {
-  font-size: 30px;
-  color: #fff;
-}
-
-/* Estilos para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-  /* Reducir el tamaño de los botones de navegación */
-  .prev,
-  .next {
-    font-size: 20px;
-  }
-
-  /* Ajustar la posición de los botones de navegación */
-  .prev {
-    left: 10px;
-  }
-
-  .next {
-    right: 10px;
-  }
-}
-
-
-/* Agregamos estilos para las flechas de navegación */
-.prev,
-.next {
+/* Agregamos flechas de navegación */
+.slider-container .prev, .slider-container .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -408,20 +436,43 @@ main ul li{
   color: #ffffff;
 }
 
-.prev {
+.slider-container .prev {
   left: 20px;
 }
 
-.next {
+.slider-container .next {
   right: 20px;
 }
 
-.prev:hover,
-.next:hover {
+/* Cambiamos el color de las flechas al pasar el mouse por encima */
+.slider-container .prev:hover, .slider-container .next:hover {
   color: #555;
 }
 
+/* Cambiamos el estilo del punto activo */
+.slider-container .dots {
+  position: absolute;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
 
+.slider-container .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-container .dot.active {
+  background-color: #555;
+}
 ul {
   margin-top: 30px;
   list-style: none;
@@ -494,26 +545,3 @@ li p {
   margin-bottom: 40px;
 }
 
-
-/* Aplicamos estilos para pantallas grandes */
-.deepl {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 20px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  color: #fff;
-  background-color: #16c0b2;
-  transition: background-color 0.3s ease;
-  margin: 20px;
-}
-
-.deepl:hover {
-  background-color: #fcfcfc;
-  cursor: pointer;
-  color: #1432dae3;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
-  
-}

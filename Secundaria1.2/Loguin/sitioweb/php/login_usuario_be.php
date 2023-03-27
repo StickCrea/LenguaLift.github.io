@@ -17,7 +17,7 @@
     }else{
         echo'
             <script>
-                alert("Usuario no existe, por favor verifique los datos introducidos");
+                alert("Contraseña o correo no existen, por favor verifique los datos introducidos");
                 window.location = "../login.php";
             </script>
         
