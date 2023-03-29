@@ -1,33 +1,22 @@
-
+<?php include("template/cabecera.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LenguaLift.css">
+    <link rel="stylesheet" href="Planes.css">
     <script src="https://kit.fontawesome.com/51877c6006.js" crossorigin="anonymous"></script>
       <title>LenguaLift</title>
-      <link rel="stylesheet" href="inicio.css">
-      <link  rel="shortcut icon" href="imgs\Logo_1.png">
+      <link class="icon" rel="shortcut icon" href="imgs/Logo_1.png">
       <script src="cd.js"></script>
-     
-<body>
-  
 
-  <?php include('template/cabecera.php');?>
-  
+    </head> 
+<body>
 
  
   <main>
-        <section class="hero">
-          <div class="container1">
-            <h1 class="hero-heading">Aprende inglés</h1>
-            <h2 class="hero-subheading">Fácil y rápido</h2>
-            <p class="hero-description">Con nuestro curso en línea, estarás hablando inglés en solo unas pocas semanas, simpre y cuando pongas de tu parte!!.</p>
-            <a href="#" class="btn3 btn-primary hero-btn">Empieza ahora</a>
-          </div>
-        </section>
+    
         
     
         <section class="features">
@@ -108,18 +97,46 @@
           </div>
         </div>
       </section>
-  
-      <section class="cta">
-        <div class="container">
-          <h2>¿Listo para mejorar tu inglés?</h2>
-          <a href="http://localhost/LenguaLift/Secundaria1.2/formulario-tarjeta-credito/" class="btn1 btn-primary">Regístrate ahora</a>
-        </div>
-      </section>
+      <div class="servicios-container">
+        <h1>Nuestros servicios</h1>
+        <p><strong>En LenguaLift, nos enfocamos en brindar una experiencia de aprendizaje de inglés efectiva y personalizada. 
+          Ofreciendo los siguientes servicios</strong></p>
+        </div><br><br>
+        <ul>
+          <li>
+            <h2  >Clases en línea</h2>
+            <p>Nuestras clases en línea son <strong>IMPARTIDAS </strong> por tutores 
+              experimentados que utilizan técnicas modernas de enseñanza y recursos multimedia 
+              para ayudar a los estudiantes a mejorar su habilidad en el inglés. 
+              Ofrecemos sesiones de 90 minutos de duración, adaptadas a las necesidades de cada estudiante.</p>
+          </li>
+          <li>
+            <h2>Cursos en línea</h2>
+            <p>Nuestros cursos en línea son auto-dirigidos y están diseñados para adaptarse 
+              a diferentes niveles de habilidad en el inglés. Los estudiantes pueden aprender 
+              a su propio ritmo, con acceso a material didáctico y ejercicios interactivos que cubren 
+              gramática, vocabulario, comprensión auditiva y escritura.</p>
+          </li>
+          <li>
+            <h2>Servicios de traducción</h2>
+            <p>Ofrecemos servicios de traducción profesional para documentos en inglés y español. 
+              Nuestro equipo de traductores certificados garantiza una traducción precisa y de alta 
+              calidad en un plazo de tiempo razonable.</p>
+          </li>
+       
+          <li>
+            <h2>Servicios de Conversación en Inglés</h2>
+             <p>Ofrecemos servicios de conversación en inglés con tutores experimentados para ayudarte a mejorar tu fluidez y confianza al hablar. 
+            Estas sesiones se realizan en línea y están adaptadas a tus necesidades y objetivos, 
+            lo que te permitirá practicar tu inglés en un ambiente seguro y amigable.</p>
+          </li>
+     
+          
+        </ul>
     </main>
   
     <footer>
-      <div class="footer">
-        <center><h3 class="red">Redes Sociales</h3>
+      <center><div class="footer">
           <div class="Redes">
            <a href="#" class="fb"><i class= "fa-brands fa-facebook" ></i></a>
             <a href="#"class="ig"><i class="fa-brands fa-instagram"></i></a>
@@ -135,11 +152,3 @@
     </footer>
   </body>
   </html>
-  
-    
-    
-   
-
-</body>
-</html>
-        

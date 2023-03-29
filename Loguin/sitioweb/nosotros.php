@@ -1,3 +1,11 @@
+<?php include("template/cabecera.php"); ?>
+
+<div class="jumbotron">
+    <h1 class="display-3">Nosotros</h1>
+    <p class="lead">Hola somos lengua lift, ¿Quieres Saber mas sobre Nosotros lengua?</p>
+    <hr class="my-2">
+    
+</div>  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,29 +28,7 @@
 
    
 
-    <header>
-        <div class="container-1">
-          <nav>
-            <div class="logo">
-              <a href="#"><img src="Imgs/LOGO.png" alt="logo"></a>
-              <h1 class="logo-text">LenguaLift</h1>
-            </div>
-            <ul class="menu">
-              <li><a class="active" href="http://localhost/LenguaLift/Secundaria1.2/leguaLift.html">Inicio</a></li>
-              <li><a href="http://localhost/LenguaLift/Secundaria/Quienes%20somos/Quienes_Somos.html">¿Quienes Somos?</a></li>
-              <li><a href="http://localhost/LenguaLift/Soporte/soporte.html">Ayuda</a></li>
-              <li>
-                <a href="#">Manuales</a>
-                <ul class="submenu">
-                  <li><a href="#">Usuario</a></li>
-                  <li><a href="#">Programador</a></li>
-                </ul>
-              </li>
-            </ul>
-            <div class="menu-toggle"><span></span></div>
-          </nav>
-        </div>
-      </header>
+   
       
 
     <main>
@@ -113,10 +99,7 @@
         
 </main>
     <footer> 
-        <h2>Redes Sociales</h2>
-       
-         
-
+        
         <div class="Redes">
          <a href="#" class="fb"><i class= "fa-brands fa-facebook" ></i></a>
               

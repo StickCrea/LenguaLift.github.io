@@ -1,11 +1,11 @@
-
+<?php include("template/cabecera.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="LenguaLift.css">
+
     <script src="https://kit.fontawesome.com/51877c6006.js" crossorigin="anonymous"></script>
       <title>LenguaLift</title>
       <link rel="stylesheet" href="inicio.css">
@@ -15,8 +15,7 @@
 <body>
   
 
-  <?php include('template/cabecera.php');?>
-  
+ 
 
  
   <main>
@@ -25,7 +24,7 @@
             <h1 class="hero-heading">Aprende inglés</h1>
             <h2 class="hero-subheading">Fácil y rápido</h2>
             <p class="hero-description">Con nuestro curso en línea, estarás hablando inglés en solo unas pocas semanas, simpre y cuando pongas de tu parte!!.</p>
-            <a href="#" class="btn3 btn-primary hero-btn">Empieza ahora</a>
+          
           </div>
         </section>
         
@@ -109,12 +108,6 @@
         </div>
       </section>
   
-      <section class="cta">
-        <div class="container">
-          <h2>¿Listo para mejorar tu inglés?</h2>
-          <a href="http://localhost/LenguaLift/Secundaria1.2/formulario-tarjeta-credito/" class="btn1 btn-primary">Regístrate ahora</a>
-        </div>
-      </section>
     </main>
   
     <footer>

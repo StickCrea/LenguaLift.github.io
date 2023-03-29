@@ -15,13 +15,10 @@ if (!$conn) {
 // Obtener los valores del formulario
 $numtarjeta = isset($_POST["inputNumero"]) ? $_POST["inputNumero"] : "";
 $nombre = isset($_POST["inputNombre"]) ? $_POST["inputNombre"] : "";
-$mes = isset($_POST["mes"]) ? $_POST["mes"] : "";
-$year = isset($_POST["selectYear"]) ? $_POST["selectYear"] : "";
-$ccv = isset($_POST["inputCCV"]) ? $_POST["inputCCV"] : "";
 $plan = isset($_POST["selectPlan"]) ? $_POST["selectPlan"] : "";
 
 // Insertar los valores en la tabla
-$sql = "INSERT INTO tarjetas (numtarjeta, nombre, mes, year, ccv, plan) VALUES ('$numtarjeta', '$nombre', '$mes', '$year', '$ccv', '$plan')";
+$sql = "INSERT INTO tarjetas (numero_tarjeta, nombre,  planx) VALUES ('$numtarjeta', '$nombre', '$plan')";
 if (mysqli_query($conn, $sql)) {
     $mensaje= "Datos almacenados correctamente";
 } else {
@@ -33,5 +30,6 @@ mysqli_close($conn);
 ?>
 <script>
     alert("<?php echo $mensaje; ?>");
-    window.location.href = "index.php";
+    window.location.href = "..index.php";
 </script>
+

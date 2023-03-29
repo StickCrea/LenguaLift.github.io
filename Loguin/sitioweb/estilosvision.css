@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(imgs/FoniNGLISH.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+  
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ /*Menu*/
+ header {
+  background-color: #faf7f7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.container-1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 90px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+.menu li {
+  position: relative;
+  font-size: 20px;
+}
+
+.menu li:hover > ul {
+  display: block;
+}
+
+.menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.menu ul li {
+  margin: 0;
+  width: 100%;
+}
+
+.menu ul a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu ul a:hover {
+  color: #EF233C;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 6px;
+  transition: transform 0.2s ease-in-out;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ 
+  
+  padding: 20px;
+}
+
+.menu a {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  margin-right: 20px;
+}
+
+.menu a:last-of-type {
+  margin-right: 20px;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #16c0b2;
+  border-bottom: 3px solid #16c0b2;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px; /* ajustar el tamaño según sea necesario */
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #333; /* cambiar el color según sea necesario */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+ .fondo{
+  margin-top: 20px;
+  width: 100%;
+ }
+
+
+@media screen and (max-width: 991px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+  }
+}
+
+
+section{
+  width: 500px;
+  padding: 40px;
+  background: rgb(255, 250, 250);
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+ 
+
+}
+
+summary{
+  background: rgb(41, 27, 192);
+  color: white;
+  padding: 30px;
+  list-style: none;
+  cursor: pointer;
+  font-family: cursive;
+ 
+  
+}
+
+details p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: justify;
+  font-size: 120%;
+ 
+  
+}
+.parrafo p{
+  left: 25px;
+  
+  
+ 
+}
+
+
+/*pie de pagina footer*/
+footer {
+  background-color: #fff2f2; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 20px; /* Espaciado interior */
+  clear: both; /* Limpiar floats */
+  width: 100%;
+  
+}
+/* Opcionalmente, puedes añadir un margen superior para separar el pie de página del contenido */
+main {
+  margin-bottom: 400px;
+  margin-top: 200px;
+}
+
+/*Section primariSo*/
+
+
+/*Nuestras Redes Sociales*/
+.Redes .fb:hover{
+color: blue;
+background: #ffffff;
+border-radius: 10px;
+}
+.Redes .ig:hover{
+color: rgba(235, 13, 224, 0.699);
+background: #ffffff;
+border-radius: 10px;
+}
+.Redes .tw:hover{
+color: #1D9DF0;
+background: #ffffff;
+border-radius: 10px;
+}
+.Redes .yt:hover{
+color: rgba(255, 0, 0, 0.699);
+background: #ffffff;
+border-radius: 10px;
+}
+
+.Redes .what:hover{
+color: rgba(37, 172, 66, 0.979);
+background: #ffffff;
+border-radius: 10px;
+}
+
+
+
+
+.Copyrigth {
+  text-align: center;
+  font-size: 14px;
+  color: #e9e7e7;
+  opacity: 45%;
+  margin: 15px;
+
+}
+.Redes a{
+text-decoration: none;
+font-size: 25px;
+padding: 5px;
+text-decoration: none;
+list-style: none;
+margin: 5px;
+
+}
+
+
+.Redes a:hover {
+
+transform: translateY(-3px) scale(1.05);
+box-shadow: 0 5px 5px 0 black ;
+
+filter: none;
+
+}
+
+/*Fondos de redes*/
+.Redes .fb{
+  color: rgb(0, 0, 0);
+ 
+}
+.Redes .ig{
+  color: rgba(0, 0, 0, 0.699);
+  
+}
+.Redes .tw{
+  color: #000000;
+
+}
+.Redes .yt{
+  color: rgba(0, 0, 0, 0.699);
+  
+  
+}
+
+.Redes .what{
+  color: rgba(0, 0, 0, 0.979);
+}
+
+
+.Infos{
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+width: 70%;
+margin-top: 5%;
+
+}
+.Infos:hover{
+transform: scale(1.05);
+
+
+}
+
+

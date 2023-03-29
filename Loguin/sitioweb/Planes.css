@@ -236,7 +236,75 @@ body {
     text-align: center;
     margin-bottom: 50px;
   }
+  
+  .cta {
+    background-color: #1E90FF;
+    color: #FFF;
+    padding: 60px 0;
+  }
+  
+  .cta-heading {
+    font-size: 48px;
+    margin-bottom: 30px;
+    text-align: center;
+    animation: pulse 1s ease-in-out infinite;
+  }
+  
+  .cta-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #FFF;
+    color: #1E90FF;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cta-btn:hover {
+    transform: scale(1.1);
+    background-color: #1E90FF;
+    color: #FFF;
+    
+    
 
+  }
+  /*Mas estilo cta*/
+  .cta {
+    background-color: #1ab8d4;
+    color: white;
+    padding: 50px;
+  }
+  
+  .cta h2 {
+    font-size: 3em;
+  }
+  
+  .cta .btn1 {
+    background-color: white;
+    color: #000000;
+    padding: 10px 30px;
+    font-size: 1.5em;
+    border-radius: 25px;
+    border: 2px solid white;
+  }
+  .cta .btn1:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    color: #1D9DF0;
+  }
+   
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   
   
   .plan {
@@ -528,12 +596,4 @@ body {
   background-color: #D90429;
 }
 
-footer {
-  background-color:  #ffffff; 
-  color: #000000; 
-  text-align: center; 
-  padding: 10px;
-  clear: both; 
-  position: relative;
-  width: 100%;
-  }
+
